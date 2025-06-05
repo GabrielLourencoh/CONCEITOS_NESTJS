@@ -10,8 +10,13 @@ export class AppController {
 
   // Método da solicitação do http -> Ler (Read) 
   // /home/hello
-  @Get('hello') // Isso é um recurso da solicitação
+  @Get('hello') // Isso é um recurso da solicitação, método
   getHello(): string {
     return 'Qualquer coisa';
+  }
+
+  @Get('exemplo')
+  exemplo(): string {
+    return 'Exemplo de rota';
   }
 }
